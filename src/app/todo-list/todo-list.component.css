@@ -1,0 +1,17 @@
+ul{
+  list-style-type: none;
+
+}
+div.switch{
+  text-align: center;
+}
+.todototal{
+  text-align: center;
+}
+app-todo-item{
+
+}
+.liList{
+  display: flex;
+  flex-direction: row;
+}

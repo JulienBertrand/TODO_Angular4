@@ -1,0 +1,19 @@
+<div class="switch" [ngSwitch]="todoList.length">
+  <p *ngSwitchCase="0">Aucune Todo, tu peux aller geeker</p>
+  <p *ngSwitchCase="1">Une Todo, tu y es presque:</p>
+  <p *ngSwitchDefault>Plusieurs Todo. Au boulot :</p>
+</div>
+<ul>
+  <li class="liList" *ngFor="let todo of todoList">
+    <app-todo-item [todo]="todo"></app-todo-item>
+  </li>
+  <br>
+  <br>
+  <li class="todototal">nombre de Todos= {{todoList.length}}</li>
+</ul>
+<app-form (todoLitevent)="addTodo($event)"></app-form>
+<br>
+<div>
+  <button type="reset" (click)="delete()">Effacer la liste de Todo</button>
+  <button type="reset" (click)="deleteDone()">Effacer la liste de Todo effectuées</button>
+</div>

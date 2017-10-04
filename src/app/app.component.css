@@ -1,0 +1,13 @@
+body {
+  background-color: #ffe692;
+  padding: 15px;
+  width: 600px;
+  display: flex;
+  flex-flow: column;
+  border-radius: 20px;
+  align-content: center;
+}
+html{
+  display: flex;
+}
+

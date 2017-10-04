@@ -1,0 +1,10 @@
+.ajout{
+  display: flex;
+}
+.done{
+  text-decoration: line-through;
+}
+.mc{
+margin-left: 30px;
+  justify-content: flex-end;
+}
