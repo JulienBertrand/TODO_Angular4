@@ -1,10 +1,11 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import Todo from "../Model/ToDo";
-import _ from "lodash";
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
+  providers:[]
 })
 export class FormComponent implements OnInit {
 
