@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
 import Todo from '../Model/ToDo';
-import TodoApi from '../Service/TodoApi';
+import {TodoApi} from '../Service/TodoApi';
 
 
 @Injectable()
 export default class TodoService {
+  todoList: Array<Todo> = [];
   constructor(private todoApi: TodoApi) {
   }
 

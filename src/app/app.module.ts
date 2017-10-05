@@ -1,12 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoItemComponent } from './todo-item/todo-item.component';
-import { FormComponent } from './form/form.component';
+import {AppComponent} from './app.component';
+import {TodoListComponent} from './todo-list/todo-list.component';
+import {TodoItemComponent} from './todo-item/todo-item.component';
+import {FormComponent} from './form/form.component';
 import {FormsModule} from "@angular/forms";
-import TodoApi from "./Service/TodoApi";
+import {TodoApi} from "./Service/TodoApi";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,4 +24,5 @@ import TodoApi from "./Service/TodoApi";
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

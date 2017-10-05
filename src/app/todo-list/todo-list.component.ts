@@ -22,19 +22,21 @@ export class TodoListComponent implements OnInit {
   }
 
   addTodo(event){
-    return this.todoService.addTodoService(event).then();
+    return this.todoService.addTodoService(event).then((newList)=>{
+      this.todoList = newList;
+    });
   }
 
   deleteList() {
-    return this.todoService.deleteTodoService().then((todoListTemp)=>{
-      this.todoList = todoListTemp;
+    return this.todoService.deleteTodoService().then((newList)=>{
+      this.todoList = newList;
     });
   }
 
 
   deleteDone() {
-    return this.todoService.deleteTodoDoneService().then((todoListTemp)=>{
-      this.todoList = todoListTemp;
+    return this.todoService.deleteTodoDoneService().then((newList)=>{
+      this.todoList = newList;
     });
   }
 
