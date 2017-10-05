@@ -21,6 +21,6 @@ export default class TodoService {
     return this.todoApi.promTodoDelete();
   }
   deleteTodoDoneService(): Promise<Array<Todo>> {
-    return this.todoApi.promTodoDelete();
+    return this.todoApi. promTodoDeleteDone();
   }
 }
